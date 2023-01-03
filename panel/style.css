@@ -1,3 +1,19 @@
 * {
     margin: 0;
 }
+
+.sidebar {
+    position: fixed;
+    width: 10vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    position: fixed;
+    width: 90vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+}
