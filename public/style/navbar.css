@@ -1,0 +1,33 @@
+nav {
+    display: flex;
+    width: calc(100vw - 2 * var(--margin-cote));
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--navbar-padding-top) var(--margin-cote);
+    height: var(--navbar-heigth);
+}
+
+/* Affichage PC */
+
+.left h1 {
+    font-size: calc(var(--navbar-heigth) - 2 * var(--navbar-padding-top));
+}
+
+.right ul {
+    display: flex;
+    width: calc(60vw - var(--margin-cote));
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+@media (orientation:landscape) {
+    .left h1 {
+        font-size: calc(var(--navbar-heigth) - 2 * var(--navbar-padding-top));
+    }
+}
+
+@media (orientation:portrait) {
+    .left h1 {
+        font-size: calc(var(--navbar-heigth) / 2 - 2 * var(--navbar-padding-top));
+    }
+}

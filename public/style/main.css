@@ -1,0 +1,11 @@
+:root {
+    --margin-cote: 30px;
+    --navbar-heigth: 7vh;
+    --navbar-padding-top: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
