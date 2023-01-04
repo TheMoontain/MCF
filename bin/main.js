@@ -1,5 +1,6 @@
 const fs = require('fs')
-const readhtml = require('./readhtml.js').readhtml
+const { readhtml } = require('./readhtml.js')
+const { panel } =  require('./panel.js')
 
 module.exports = {
     routing: async (req, res) => {
@@ -12,13 +13,7 @@ module.exports = {
                 res.end("Non valid method")
             }
         } else if (req.url.startsWith("/apanel")) {
-            if (req.url == "/apanel") {
-                html = fs.readFileSync('./panel/index.html')
-                res.end(html)
-            } else {
-                file = fs.readFileSync('./panel/'+req.url.split("/apanel/").join(""))
-                res.end(file)
-            }
+            panel.panel(req, res)
         } else if (req.url == '/style/main.css') {
             res.end(fs.readFileSync('./public/style/main.css').toString())
         } else if (req.url.startsWith('/style')) {

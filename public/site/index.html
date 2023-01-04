@@ -5,5 +5,5 @@
 <a>link hors nav</a>Hello
 node(/*custom_function.photo_gallery()*/)
 <script>
-    document.querySelector('.hero_section').innerHTML = "node(/*require('../data/sitedata.js').title*/)"
+    document.querySelector('.hero_section').innerHTML = "node(/*console.log(fs.readFileSync('./data/sitedata.json').toString())*/)"
 </script>

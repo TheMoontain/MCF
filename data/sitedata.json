@@ -1,0 +1,36 @@
+{
+    "main_settings": {
+        "name": "Home",
+        "icon": "fa-solid fa-house-chimney",
+        "options": {
+            "Titre": {
+                "type": "text",
+                "value": "MCF"
+            },
+            "Main_color": {
+                "type": "color",
+                "value": "#00C241"
+            }
+        }
+    },
+    "articles": {
+        "name": "Articles",
+        "icon": "fa-regular fa-newspaper",
+        "options": {
+            "Articles": {
+                "type": "list",
+                "params": ["title", "content", "timestamp"],
+                "value": [{
+                    "title": "titre",
+                    "content": "article1",
+                    "timestamp": 1672826370467
+                },
+                {
+                    "title": "titre2",
+                    "content": "article2",
+                    "timestamp": 1672826382865
+                }]
+            }
+        }
+    }
+}
